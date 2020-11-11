@@ -1,4 +1,5 @@
 **Bingo JavaScript**
+
 Bingo is a game of chance for several people that is played with numbered balls and at least one card per person.
 
 This is an app that randomly select a word from a list of words.
