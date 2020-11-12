@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo JavaScript</title>
     <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="">
-    <div class="w-100">
-        <div id="bingo" class="w-100 h-100">
-            <h1>
-                Bingo
-            </h1>
-            <div>
-                <input id="data-file" type="file" multiple>
+<body class="h-full bg-purple-900 text-white flex flex-wrap items-center content-center">
+    <div id="bingo" class="w-full flex flex-col -m-10">
+        <h1 class="font-black text-6xl text-yellow-400 text-center mb-2" style="text-shadow:0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);">
+            ¡Bingoooo!
+        </h1>
+        <div class="mb-6 mx-auto">
+            <input id="data-file" type="file" multiple>
+        </div>
+        <div class="max-w-lg mx-auto my-6 flex p-6 bg-white rounded-lg shadow-xl">
+            <div class="flex-shrink-0">
+                <img id="bingo-image" class="h-16" src="img/bingo.jpg" alt="Icono de bingo">
             </div>
-            <div>
-                <pre id="system-messages">
-                    No se ha cargado el listado.
-                </pre>
-            </div>
-            <div>
-                <button id="bingo-button">
-                    BINGO!
-                </button>
+            <div class="ml-6 pt-1">
+                <h4 id="winner-word" class="text-4xl text-gray-900 leading-tight"></h4>
+                <p id="system-messages" class="text-base text-gray-600 leading-normal">No cargado palabras al sistema.</p>
             </div>
         </div>
+        <div class="w-full text-center">
+            <button id="bingo-button" class="bg-green-500 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded">
+                BINGO!
+            </button>
+        </div>
+    </div>
+    <div class="w-full text-white text-left bg-black p-4" style="position:absolute; bottom: 0;">
+        <em id="console">
+            Palabras seleccionadas: 
+        </em>
     </div>
     <script src="js/main.js"></script>
 </body>
