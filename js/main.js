@@ -91,7 +91,7 @@
         }
 
         // Actitude!
-        // This part of the app is for motivate 
+        // This part of the app is to motivate the participants
         // across bingo game sessions.
         let actitude = [
             '¡Estás salao!',
